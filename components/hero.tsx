@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useLanguage } from "./language-context";
 import { WaveDivider } from "./wave-divider";
 
@@ -21,31 +20,46 @@ export function Hero() {
         }}
       />
 
-      <div className="relative z-10 flex flex-1 flex-col justify-center pt-[var(--header-height)] pb-16 md:pb-20">
-        <h1 className="sr-only">
-          Enlightened Coaching — Claudia Forero, life coach espiritual
-          certificada en Miami
-        </h1>
-        <figure className="hero-banner w-full">
-          <Image
-            src="/images/brand-banner.jpg"
-            alt="Enlightened Coaching — Claudia Forero. To reach your goals / Para alcanzar sus metas"
-            width={1000}
-            height={288}
-            priority
-            className="h-auto w-full"
-            sizes="100vw"
-          />
-        </figure>
+      <div className="relative z-10 flex flex-1 flex-col justify-center px-[4vw] pt-[calc(var(--header-height)+1.25rem)] pb-16 md:pb-20">
+        <div className="hero-banner mx-auto w-full max-w-4xl">
+          <div
+            className="bg-lime px-6 py-10 text-center sm:px-10 sm:py-12 md:px-16 md:py-14"
+            style={{
+              boxShadow:
+                "inset 0 0 0 1px #111, inset 0 0 0 4px var(--brand-yellow), inset 0 0 0 5px #111",
+            }}
+          >
+            <h1 className="font-script text-[clamp(2.75rem,10vw,5.75rem)] leading-[1.05] text-ink text-balance">
+              Enlightened Coaching
+            </h1>
 
-        <div className="hero-copy mx-auto mt-8 max-w-2xl px-[4vw] text-center md:mt-10">
-          <p className="mb-5 text-base leading-relaxed text-ink/90 sm:text-lg md:text-xl">
+            <p className="font-nav mt-4 text-[0.7rem] font-semibold tracking-[0.18em] text-ink uppercase sm:text-sm sm:tracking-[0.22em]">
+              To reach your goals
+            </p>
+            <p className="font-nav mt-1 text-[0.7rem] font-semibold tracking-[0.18em] text-ink uppercase sm:text-sm sm:tracking-[0.22em]">
+              Para alcanzar sus metas
+            </p>
+
+            <div
+              className="mx-auto mt-5 flex w-[min(100%,18rem)] flex-col gap-[3px] sm:w-[22rem]"
+              aria-hidden="true"
+            >
+              <span className="block h-px w-full bg-[#4BA3D9]" />
+              <span className="block h-px w-full bg-[#F0C418]" />
+              <span className="block h-px w-full bg-[#7BC67E]" />
+              <span className="block h-px w-full bg-[#C62828]" />
+            </div>
+          </div>
+        </div>
+
+        <div className="hero-copy mx-auto mt-10 max-w-2xl text-center md:mt-12">
+          <p className="mb-5 text-lg leading-relaxed text-ink/90 sm:text-xl md:text-2xl">
             {t.hero.tagline}
           </p>
-          <p className="mb-8 text-sm leading-relaxed text-ink-muted sm:text-base">
+          <p className="mb-8 text-base leading-relaxed text-ink-muted sm:text-lg">
             {t.hero.support}
           </p>
-          <a href="#agenda" className="btn-pill">
+          <a href="#contacto" className="btn-pill">
             {t.hero.cta}
           </a>
         </div>

@@ -11,12 +11,12 @@ export function Testimonial() {
     <section className="relative bg-bg-warm px-[4vw] py-20 md:py-28">
       <div className="mx-auto max-w-3xl text-center">
         <Reveal>
-          <h2 className="font-display mb-8 text-3xl text-ink md:text-4xl">
+          <h2 className="font-display mb-8 text-4xl text-ink md:text-5xl">
             {t.testimonial.title}
           </h2>
         </Reveal>
         <Reveal delayMs={80}>
-          <blockquote className="space-y-6 text-lg leading-relaxed text-ink-muted md:text-xl">
+          <blockquote className="space-y-6 text-xl leading-relaxed text-ink-muted md:text-2xl">
             <p>{t.testimonial.quote}</p>
             <p>{t.testimonial.recommend}</p>
             <footer className="font-display pt-2 text-ink italic">

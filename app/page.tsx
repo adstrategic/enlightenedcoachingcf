@@ -1,5 +1,4 @@
 import { About } from "@/components/about";
-import { Booking } from "@/components/booking";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
@@ -20,7 +19,6 @@ export default function Home() {
         <Purpose />
         <Sessions />
         <About />
-        {/* <Booking /> */}
       </main>
       <Footer />
       <WhatsAppFloat />

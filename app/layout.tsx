@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Marcellus, PT_Serif, Source_Sans_3 } from "next/font/google";
+import { Great_Vibes, Marcellus, PT_Serif, Source_Sans_3 } from "next/font/google";
 import { JsonLd } from "@/components/json-ld";
 import { LanguageProvider } from "@/components/language-context";
 import { siteConfig } from "@/lib/config";
@@ -25,6 +25,13 @@ const sourceSans = Source_Sans_3({
   variable: "--font-source-sans",
   subsets: ["latin", "latin-ext"],
   weight: ["400", "600"],
+  display: "swap",
+});
+
+const greatVibes = Great_Vibes({
+  variable: "--font-script",
+  subsets: ["latin", "latin-ext"],
+  weight: "400",
   display: "swap",
 });
 
@@ -89,7 +96,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="es"
-      className={`${ptSerif.variable} ${marcellus.variable} ${sourceSans.variable} h-full antialiased`}
+      className={`${ptSerif.variable} ${marcellus.variable} ${sourceSans.variable} ${greatVibes.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-bg text-ink">
         <JsonLd />

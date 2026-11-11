@@ -18,7 +18,7 @@
   --slate: oklch(0.368 0.076 135);
   --slate-deep: oklch(0.32 0.065 135);
   --white: oklch(0.99 0.002 122);
-  --header-height: 5.5rem;
+  --header-height: 4.75rem;
 }
 
 @theme inline {
@@ -38,6 +38,10 @@
   --font-display: var(--font-pt-serif);
   --font-body: var(--font-marcellus);
   --font-sans: var(--font-source-sans);
+}
+
+.font-script {
+  font-family: var(--font-script), cursive;
 }
 
 html {

@@ -32,13 +32,13 @@ export function About() {
             <h2 className="font-nav mb-6 text-sm tracking-[0.18em] text-accent uppercase">
               {t.about.title}
             </h2>
-            <p className="mb-5 text-base leading-relaxed text-ink-muted md:text-lg">
+            <p className="mb-5 text-lg leading-relaxed text-ink-muted md:text-xl">
               {t.about.bio}
             </p>
-            <p className="mb-6 text-base leading-relaxed text-ink-muted md:text-lg">
+            <p className="mb-6 text-lg leading-relaxed text-ink-muted md:text-xl">
               {t.about.trajectory}
             </p>
-            <p className="font-display text-xl text-slate italic md:text-2xl">
+            <p className="font-display text-2xl text-slate italic md:text-3xl">
               {t.about.closing}
             </p>
           </div>

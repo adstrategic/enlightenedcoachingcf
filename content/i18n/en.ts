@@ -15,7 +15,7 @@ export const en: Dictionary = {
     about: "About Claudia",
     blog: "Blog",
     contact: "Contact",
-    cta: "Book now",
+    cta: "Contact",
   },
   hero: {
     brand: "Enlightened Coaching",
@@ -23,7 +23,7 @@ export const en: Dictionary = {
       "You are light, and you came to this world to shine. This light is your inner potential… It is your passion, it is something that you love to do and it is what you are good at effortlessly. It IS YOU!",
     support:
       "Coaching sessions to develop an effective plan and balance every area of your life.",
-    cta: "Reserve your space",
+    cta: "Get in touch",
   },
   testimonial: {
     title: "Testimonial",
@@ -83,7 +83,7 @@ export const en: Dictionary = {
   sessions: {
     title: "Sessions",
     body: "Coaching sessions improve your chance of achieving your goals. They last one hour, and the number of sessions depends on the individual. Clients are given assignments to help clarify their goals and the best way to achieve them.",
-    cta: "Book a session",
+    cta: "Get in touch",
   },
   about: {
     title: "About Claudia",

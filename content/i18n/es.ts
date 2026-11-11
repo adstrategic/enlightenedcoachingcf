@@ -15,7 +15,7 @@ export const es: Dictionary = {
     about: "Sobre Claudia",
     blog: "Blog",
     contact: "Contacto",
-    cta: "Reservar",
+    cta: "Contactar",
   },
   hero: {
     brand: "Enlightened Coaching",
@@ -23,7 +23,7 @@ export const es: Dictionary = {
       "Tú eres luz y viniste a este universo a brillar. La luz de ese brillo es tu potencial… Eso que te apasiona, eso en lo que eres bueno sin mucho esfuerzo. Eso que ERES TÚ!",
     support:
       "Sesiones de coaching para desarrollar un plan efectivo y equilibrar todas las áreas de tu vida.",
-    cta: "Reserva tu espacio",
+    cta: "Contáctame",
   },
   testimonial: {
     title: "Testimonio",
@@ -83,7 +83,7 @@ export const es: Dictionary = {
   sessions: {
     title: "Sesiones",
     body: "Las sesiones de coaching mejoran tus oportunidades de alcanzar tus metas. Duran una hora, y el número de sesiones varía entre personas. A cada persona se le asignan “tareas” para ayudarle a aclarar sus metas y ver la mejor forma de lograrlas.",
-    cta: "Agenda una sesión",
+    cta: "Contáctame",
   },
   about: {
     title: "Sobre Claudia",

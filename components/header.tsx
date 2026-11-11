@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { siteConfig } from "@/lib/config";
 import { useLanguage } from "./language-context";
@@ -30,7 +31,7 @@ export function Header() {
     { href: "#sesiones", label: t.nav.sessions },
     { href: "#sobre", label: t.nav.about },
     { href: siteConfig.blogUrl, label: t.nav.blog, external: true },
-    { href: "#agenda", label: t.nav.contact },
+    { href: "#contacto", label: t.nav.contact },
   ];
 
   const solid = scrolled || open;
@@ -43,12 +44,20 @@ export function Header() {
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-4 px-[4vw] py-4">
+      <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-4 px-[4vw] py-2.5">
         <a
           href="#inicio"
-          className="font-display min-w-0 truncate text-sm tracking-[0.14em] uppercase sm:text-base"
+          className="relative block h-11 w-[5.5rem] shrink-0 overflow-hidden sm:h-14 sm:w-[7.5rem]"
+          aria-label="Enlightened Coaching — Claudia Forero"
         >
-          Enlightened Coaching
+          <Image
+            src="/images/mariposa.jpg"
+            alt="Enlightened Coaching — Claudia Forero"
+            fill
+            priority
+            className="object-cover object-left"
+            sizes="120px"
+          />
         </a>
 
         <nav className="font-nav hidden items-center gap-5 text-[0.92rem] lg:flex">
@@ -68,7 +77,7 @@ export function Header() {
 
         <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           <LanguageToggle tone="light" />
-          <a href="#agenda" className="btn-pill hidden lg:inline-flex">
+          <a href="#contacto" className="btn-pill hidden lg:inline-flex">
             {t.nav.cta}
           </a>
           <button
@@ -93,7 +102,7 @@ export function Header() {
           id="mobile-nav"
           className="border-t border-ink/10 bg-lime px-[4vw] py-4 lg:hidden"
         >
-          <nav className="font-nav flex flex-col gap-3 text-base text-ink">
+          <nav className="font-nav flex flex-col gap-3 text-lg text-ink">
             {links.map((link) => (
               <a
                 key={link.label}
@@ -108,7 +117,7 @@ export function Header() {
               </a>
             ))}
             <a
-              href="#agenda"
+              href="#contacto"
               className="btn-pill mt-2 w-full"
               onClick={() => setOpen(false)}
             >

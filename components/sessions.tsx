@@ -28,13 +28,13 @@ export function Sessions() {
 
         <Reveal delayMs={100}>
           <div>
-            <h2 className="font-display mb-5 text-3xl md:text-4xl">
+            <h2 className="font-display mb-5 text-4xl md:text-5xl">
               {t.sessions.title}
             </h2>
-            <p className="mb-8 text-lg leading-relaxed text-ink-muted italic">
+            <p className="mb-8 text-xl leading-relaxed text-ink-muted italic">
               {t.sessions.body}
             </p>
-            <a href="#agenda" className="btn-pill">
+            <a href="#contacto" className="btn-pill">
               {t.sessions.cta}
             </a>
           </div>
